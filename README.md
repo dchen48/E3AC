@@ -10,7 +10,7 @@ python main_vec_e3.py --scenario [simple_spread_n3,simple_spread_n6,simple_coop_
 2. Train E3AC on MuJoCo (multi-agent reacher):
 ```
 cd E3AC/E3-MuJoCo/MA_Reacher
-python train.py actor_type=segnn critic_type=segnn pixel_obs=false action_repeat=1 frame_stack=1 task=[cartpole_balance_sparse, reacher_hard] agent=ddpg_e3 lr=[Please refer to the appendix]
+python train.py actor_type=[mlp,segnn] critic_type=[mlp,segnn] pixel_obs=false action_repeat=1 frame_stack=1 task=reacher_hard agent=ddpg_e3 lr=[Please refer to the appendix]
 ```
 3. Train E3AC on MuJoCo (multi-agent hopper 3D):
 ```
