@@ -20,6 +20,6 @@ python main.py --env_name hopper --morphologies hopper --exp_path ../results --c
 
 
 ### Acknowledgement
-The E3-MPE code is based on https://github.com/IouJenLiu/PIC
+The E3-MPE code is based on https://github.com/IouJenLiu/PIC.
 
-The E3-MuJoCo is based on https://github.com/sahandrez/homomorphic_policy_gradient and https://github.com/alpc91/SGRL/tree/main.
+The E3-MuJoCo is based on https://github.com/sahandrez/homomorphic_policy_gradient and https://github.com/alpc91/SGRL.
