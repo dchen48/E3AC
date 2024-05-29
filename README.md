@@ -7,7 +7,7 @@ E3-Equivariant Actor-Critic Methods for Cooperative Multi-Agent Reinforcement Le
 cd E3AC/E3-MPE/maddpg
 python main_vec_e3.py --scenario [simple_spread_n3,simple_spread_n6,simple_coop_push_n3,simple_coop_push_n6,simple_tag_n3,simple_tag_n6] --continuous --actor_type [MLP,gcn_max,segnn] --critic_type [MLP,segnn] --actor_lr [Please refer to the appendix] --critic_lr [Please refer to the appendix] --fixed_lr  --batch_size [Please refer to the appendix] --actor_clip_grad_norm 0.5 --cuda
 ```
-2. Train E3AC on MuJoCo (single- and multi-agent reacher):
+2. Train E3AC on MuJoCo Tasks (single- and multi-agent reacher):
 ```
 cd E3AC/E3-MuJoCo/Reacher or cd E3AC/E3-MuJoCo/MA_Reacher
 python train.py actor_type=[mlp,segnn] critic_type=[mlp,segnn] pixel_obs=false action_repeat=1 frame_stack=1 task=reacher_hard agent=ddpg_e3 lr=[Please refer to the appendix]
