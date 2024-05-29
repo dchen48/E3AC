@@ -1,0 +1,26 @@
+agent_name: ddpg_ours
+discrete_actions: false
+
+dir_name: critic_type_${critic_type}_actor_type_${actor_type}
+
+agent:
+  _target_: agents.ddpg_e3.DDPGAgent
+  obs_shape: ??? # to be specified later
+  action_shape: ??? # to be specified later
+  device: ${device}
+  lr: ${lr}
+  critic_target_tau: 0.01
+  update_every_steps: 2
+  num_expl_steps: 2000
+  hidden_dim: 256
+  feature_dim: ${feature_dim}
+  stddev_schedule: ${stddev_schedule}
+  stddev_clip: 0.3
+  clipped_noise: true
+  linear_approx: ${linear_approx}
+
+  #critic and actor type for ddpg critic
+  critic_type: ${critic_type}
+  actor_type: ${actor_type}
+  obs_graph_info: None
+  obs_action_n_graph_info: None
